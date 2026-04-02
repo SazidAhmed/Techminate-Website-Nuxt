@@ -27,6 +27,7 @@ useHead({
       <AIIntegrationSection />
       <PortfolioSection />
       <EngagementModelsSection />
+      <ProcessSection />
       <TeamSection />
       <TestimonialsSection />
       <FAQSection />
