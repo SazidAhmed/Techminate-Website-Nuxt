@@ -26,7 +26,7 @@ const services = [
 </script>
 
 <template>
-  <section id="services" class="py-16 sm:py-20 lg:py-28" style="background:#f9fafb">
+  <section id="services" class="py-16 sm:py-20 lg:py-28 relative backdrop-blur-sm" style="background:rgba(255,255,255,0.3)">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mb-12 sm:mb-16">
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4" style="color:#111827">
@@ -43,7 +43,7 @@ const services = [
           v-spotlight
           v-for="(service, index) in services"
           :key="service.title"
-          :style="`transition-delay: ${index * 100}ms; background:#ffffff;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.025)`"
+          :style="`transition-delay: ${index * 100}ms; background:rgba(255,255,255,0.65); backdrop-filter:blur(24px); border:1px solid rgba(255,255,255,0.8); box-shadow:0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.025)`"
           class="p-6 sm:p-8 rounded-[24px] transition-all duration-300"
           @mouseenter="($event.currentTarget as HTMLElement).style.boxShadow='0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.05)'"
           @mouseleave="($event.currentTarget as HTMLElement).style.boxShadow='0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.025)'"

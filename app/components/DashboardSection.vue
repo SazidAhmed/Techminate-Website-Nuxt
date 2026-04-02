@@ -3,7 +3,7 @@ import { Search, Rocket, Eye, BrainCircuit, Shield } from 'lucide-vue-next'
 </script>
 
 <template>
-  <section id="process" class="py-16 sm:py-20 lg:py-28" style="background:#f9fafb">
+  <section id="process" class="py-16 sm:py-20 lg:py-28 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 sm:mb-16">
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold" style="color:#111827">
@@ -13,7 +13,7 @@ import { Search, Rocket, Eye, BrainCircuit, Shield } from 'lucide-vue-next'
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Large card - Strategic Product Discovery -->
-        <div class="md:col-span-2 rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:#ffffff;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05)">
+        <div class="md:col-span-2 rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:rgba(255,255,255,0.6);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.5);box-shadow:0 10px 30px -10px rgba(0,0,0,0.05)">
           <div class="w-10 h-10 rounded-full flex items-center justify-center mb-6" style="border:1px solid #e5e7eb">
             <Search class="w-5 h-5" style="color:#111827" />
           </div>
@@ -24,7 +24,7 @@ import { Search, Rocket, Eye, BrainCircuit, Shield } from 'lucide-vue-next'
         </div>
 
         <!-- Dark card - Resilient Architecture -->
-        <div class="rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:#1e2432;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05)">
+        <div class="rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:rgba(17,24,39,0.7);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.1);box-shadow:0 10px 30px -10px rgba(0,0,0,0.1)">
           <div class="w-10 h-10 rounded-full flex items-center justify-center mb-6 border" style="border-color:rgba(255,255,255,0.1)">
             <Rocket class="w-5 h-5" style="color:#38bdf8" />
           </div>
@@ -35,7 +35,7 @@ import { Search, Rocket, Eye, BrainCircuit, Shield } from 'lucide-vue-next'
         </div>
 
         <!-- Transparent Lifecycle -->
-        <div class="rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:#ffffff;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05)">
+        <div class="rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:rgba(255,255,255,0.6);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.5);box-shadow:0 10px 30px -10px rgba(0,0,0,0.05)">
           <div class="w-10 h-10 rounded-full flex items-center justify-center mb-6" style="border:1px solid #e5e7eb">
             <Eye class="w-5 h-5" style="color:#111827" />
           </div>
@@ -46,7 +46,7 @@ import { Search, Rocket, Eye, BrainCircuit, Shield } from 'lucide-vue-next'
         </div>
 
         <!-- Outcome-Driven AI -->
-        <div class="rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:#ffffff;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05)">
+        <div class="rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:rgba(255,255,255,0.6);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.5);box-shadow:0 10px 30px -10px rgba(0,0,0,0.05)">
           <div class="w-10 h-10 rounded-full flex items-center justify-center mb-6" style="border:1px solid #e5e7eb">
             <BrainCircuit class="w-5 h-5" style="color:#111827" />
           </div>
@@ -57,7 +57,7 @@ import { Search, Rocket, Eye, BrainCircuit, Shield } from 'lucide-vue-next'
         </div>
 
         <!-- DevOps Partnership -->
-        <div class="rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:#ffffff;box-shadow:0 4px 6px -1px rgba(0,0,0,0.05)">
+        <div class="rounded-[24px] p-8 sm:p-10 transition-shadow" style="background:rgba(255,255,255,0.6);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.5);box-shadow:0 10px 30px -10px rgba(0,0,0,0.05)">
           <div class="w-10 h-10 rounded-full flex items-center justify-center mb-6" style="border:1px solid #e5e7eb">
             <Shield class="w-5 h-5" style="color:#111827" />
           </div>

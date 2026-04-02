@@ -15,7 +15,7 @@ const bottomFeatures = [
 </script>
 
 <template>
-  <section class="py-16 sm:py-20 lg:py-28" style="background:#020617">
+  <section class="py-16 sm:py-20 lg:py-28 relative overflow-hidden" style="background:rgba(2,6,23,0.85); backdrop-filter:blur(40px); border-top:1px solid rgba(255,255,255,0.1); border-bottom:1px solid rgba(255,255,255,0.1)">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="mb-12 sm:mb-16 max-w-3xl">
@@ -31,7 +31,7 @@ const bottomFeatures = [
       <div class="space-y-4 sm:space-y-6">
         <!-- Top row -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          <div v-for="feature in topFeatures" :key="feature.title" class="flex gap-3 sm:gap-4">
+          <div v-for="feature in topFeatures" :key="feature.title" class="flex gap-3 sm:gap-4 p-5 rounded-2xl transition-colors hover:bg-white/5 border border-transparent hover:border-white/10">
             <div class="flex-shrink-0">
               <div class="w-8 h-8 flex items-center justify-center rounded-lg" style="background:rgba(14,165,233,0.15);border:1px solid rgba(14,165,233,0.3)">
                 <component :is="feature.icon" class="w-4 h-4" style="color:#38bdf8" />
@@ -39,7 +39,7 @@ const bottomFeatures = [
             </div>
             <div>
               <h3 class="text-sm font-semibold mb-1" style="color:#ffffff">{{ feature.title }}</h3>
-              <p class="text-sm leading-relaxed" style="color:#64748b">{{ feature.description }}</p>
+              <p class="text-sm leading-relaxed" style="color:#94a3b8">{{ feature.description }}</p>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const bottomFeatures = [
 
         <!-- Bottom row -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          <div v-for="feature in bottomFeatures" :key="feature.title" class="flex gap-3 sm:gap-4">
+          <div v-for="feature in bottomFeatures" :key="feature.title" class="flex gap-3 sm:gap-4 p-5 rounded-2xl transition-colors hover:bg-white/5 border border-transparent hover:border-white/10">
             <div class="flex-shrink-0">
               <div class="w-8 h-8 flex items-center justify-center rounded-lg" style="background:rgba(14,165,233,0.15);border:1px solid rgba(14,165,233,0.3)">
                 <component :is="feature.icon" class="w-4 h-4" style="color:#38bdf8" />
@@ -57,7 +57,7 @@ const bottomFeatures = [
             </div>
             <div>
               <h3 class="text-sm font-semibold mb-1" style="color:#ffffff">{{ feature.title }}</h3>
-              <p class="text-sm leading-relaxed" style="color:#64748b">{{ feature.description }}</p>
+              <p class="text-sm leading-relaxed" style="color:#94a3b8">{{ feature.description }}</p>
             </div>
           </div>
         </div>

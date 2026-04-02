@@ -58,9 +58,9 @@ const closeMenu = () => {
       isHidden ? '-translate-y-full' : 'translate-y-0',
     ]"
     :style="{
-      background: isScrolled ? 'rgba(255,255,255,0.92)' : 'transparent',
-      backdropFilter: isScrolled ? 'blur(12px)' : 'none',
-      borderBottom: isScrolled ? '1px solid #e5e7eb' : '1px solid transparent',
+      background: isScrolled ? 'rgba(255,255,255,0.65)' : 'transparent',
+      backdropFilter: isScrolled ? 'blur(16px)' : 'none',
+      borderBottom: isScrolled ? '1px solid rgba(229,231,235,0.5)' : '1px solid transparent',
     }"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
