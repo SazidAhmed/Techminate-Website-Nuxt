@@ -7,6 +7,9 @@ const isScrolled = ref(false)
 const isHidden = ref(false)
 let lastScrollY = 0
 
+// Import modal state
+const { openModal } = useBookingModal()
+
 const navLinks = [
   { name: 'Solutions', href: '#services' },
   { name: 'Process', href: '#process' },
@@ -85,13 +88,13 @@ const closeMenu = () => { isOpen.value = false }
 
         <!-- CTA Button -->
         <div class="hidden md:flex items-center">
-          <a
-            href="#"
-            class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-colors"
+          <button
+            @click="openModal"
+            class="inline-flex items-center px-4 py-2 text-sm font-medium rounded-lg transition-colors focus:outline-none"
             style="color:#ffffff;background:#111827"
           >
             Book a Consultation
-          </a>
+          </button>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -128,14 +131,13 @@ const closeMenu = () => { isOpen.value = false }
               {{ link.name }}
             </a>
             <div class="pt-3 mt-2" style="border-top:1px solid #e5e7eb">
-              <a
-                href="#"
-                class="inline-flex items-center justify-center w-full px-4 py-2.5 text-sm font-medium rounded-lg transition-colors"
+              <button
+                @click="() => { closeMenu(); openModal(); }"
+                class="inline-flex items-center justify-center w-full px-4 py-2.5 text-sm font-medium rounded-lg transition-colors focus:outline-none"
                 style="color:#ffffff;background:#111827"
-                @click="closeMenu"
               >
                 Book a Consultation
-              </a>
+              </button>
             </div>
           </div>
         </div>

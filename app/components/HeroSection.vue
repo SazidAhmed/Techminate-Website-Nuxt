@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import { ArrowRight } from 'lucide-vue-next'
+import { ArrowRight, Play } from 'lucide-vue-next'
+
+const { openModal } = useBookingModal()
 </script>
 
 <template>
@@ -19,14 +21,18 @@ import { ArrowRight } from 'lucide-vue-next'
             We build high-performance software that transforms complex business challenges into intuitive digital products.
           </p>
 
-          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <a
-              href="#"
-              class="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium rounded-lg transition-colors"
-              style="color:#ffffff;background:#111827"
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <button
+              @click="openModal"
+              class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold rounded-xl transition-all duration-300 focus:outline-none"
+              style="color:#ffffff;background:#111827;box-shadow:0 4px 6px -1px rgba(17,24,39,0.1), 0 2px 4px -2px rgba(17,24,39,0.1)"
+              @mouseenter="($event.currentTarget as HTMLElement).style.transform='translateY(-2px)';"
+              @mouseleave="($event.currentTarget as HTMLElement).style.transform='translateY(0)';"
             >
               Schedule Free Consultation
-            </a>
+              <ArrowRight class="w-4 h-4" />
+            </button>
             <a
               href="#work"
               class="inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium rounded-lg transition-colors"

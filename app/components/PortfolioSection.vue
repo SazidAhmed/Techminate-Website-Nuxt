@@ -3,20 +3,20 @@ import { ArrowRight } from 'lucide-vue-next'
 
 const projects = [
   {
-    category: 'FINTECH',
-    title: 'Modernizing Global Portfolio Management',
-    description: 'End-to-end platform redesign for a leading investment firm, integrating real-time market data, automated reporting, and AI-assisted portfolio rebalancing.',
+    category: 'ENTERPRISE FINTECH',
+    title: 'Decommissioning Legacy Monoliths for a Tier-1 Bank',
+    description: 'We orchestrated a zero-downtime migration to a containerized microservices architecture. By decoupling their core transaction engine, we eliminated technical debt and dramatically reduced cloud infrastructure spend.',
     image: '/images/case-fintech.png',
     link: '#',
-    metric: null
+    metric: { value: '40%', label: 'Cloud Cost Reduction' }
   },
   {
-    category: 'LOGISTICS',
-    title: 'AI-Driven Inventory Optimization',
-    description: 'Custom AI system that reduced stockouts by 43% while cutting excess inventory costs—delivering measurable ROI within the first quarter of deployment.',
+    category: 'GLOBAL LOGISTICS',
+    title: 'Predictive AI Inventory Routing',
+    description: 'Developed a custom machine learning model integrated directly into their ERP. The system dynamically predicts stockouts and reroutes supply chain shipments autonomously, yielding measurable ROI in quarter one.',
     image: '/images/case-logistics.png',
     link: '#',
-    metric: { value: '43%', label: 'Overhead Reduction' }
+    metric: { value: '3.2M', label: 'Annual Savings' }
   },
 ]
 </script>

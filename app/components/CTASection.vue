@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ArrowRight } from 'lucide-vue-next'
+
+const { openModal } = useBookingModal()
 </script>
 
 <template>
@@ -21,14 +23,14 @@ import { ArrowRight } from 'lucide-vue-next'
             Partner with an engineering team that prioritizes business outcomes with every line of code. No long-term lock-in required.
           </p>
 
-          <a
-            href="#"
-            class="inline-flex items-center gap-2 rounded-xl transition-colors"
+          <button
+            @click="openModal"
+            class="inline-flex items-center gap-2 rounded-xl transition-all duration-300 hover:-translate-y-1 focus:outline-none"
             style="padding:12px 28px;background:#ffffff;color:#0f172a;font-size:15px;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,0.2)"
           >
             Schedule Your Free Consultation
             <ArrowRight class="w-4 h-4" />
-          </a>
+          </button>
         </div>
       </div>
     </div>

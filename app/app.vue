@@ -1,5 +1,22 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Techminate | Enterprise Software Architecture & AI',
+  description: 'We design and build high-performance digital products for global enterprises and ambitious startups. Custom Web, Mobile, and AI Software built to scale.',
+  ogTitle: 'Techminate | Enterprise Software & AI Integrations',
+  ogDescription: 'Architectural Precision in Software. Custom Web, Mobile, and AI products built for high velocity.',
+  twitterCard: 'summary_large_image',
+})
+
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  }
+})
+</script>
+
 <template>
   <div>
+    <BookingModal />
     <Navigation />
     <main>
       <HeroSection />
