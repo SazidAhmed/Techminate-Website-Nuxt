@@ -26,7 +26,7 @@ const models = [
 <template>
   <section class="py-16 sm:py-20 lg:py-28" style="background:#ffffff">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mb-12 sm:mb-16">
+      <div class="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4" style="color:#111827">
           Flexible Engagement Models
         </h2>

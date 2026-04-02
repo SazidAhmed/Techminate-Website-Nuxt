@@ -25,7 +25,7 @@ const projects = [
   <section id="work" class="py-16 sm:py-20 lg:py-28" style="background:#ffffff">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
-      <div class="mb-10 sm:mb-12">
+      <div class="mb-10 sm:mb-12 text-center">
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold" style="color:#111827">
           Selected Case Studies
         </h2>

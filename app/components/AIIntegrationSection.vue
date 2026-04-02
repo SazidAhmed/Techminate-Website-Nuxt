@@ -18,7 +18,7 @@ const bottomFeatures = [
   <section class="py-16 sm:py-20 lg:py-28 relative overflow-hidden" style="background:rgba(2,6,23,0.85); backdrop-filter:blur(40px); border-top:1px solid rgba(255,255,255,0.1); border-bottom:1px solid rgba(255,255,255,0.1)">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
-      <div class="mb-12 sm:mb-16 max-w-3xl">
+      <div class="mb-12 sm:mb-16 max-w-3xl mx-auto text-center">
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6" style="color:#ffffff">
           AI Integration for Measurable ROI
         </h2>

@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-vue-next";
 const isOpen = ref(false);
 const isScrolled = ref(false);
 const isHidden = ref(false);
+const isNavigating = ref(false);
 let lastScrollY = 0;
 
 // Import modal state
@@ -24,17 +25,25 @@ const handleScroll = () => {
   isScrolled.value = currentScrollY > 20;
 
   // Hide navbar when scrolling down past 200px, show when scrolling up
-  if (currentScrollY > 200) {
+  if (currentScrollY > 200 && !isNavigating.value) {
     if (currentScrollY > lastScrollY && !isOpen.value) {
       isHidden.value = true; // Scrolling down
     } else {
       isHidden.value = false; // Scrolling up
     }
-  } else {
+  } else if (!isNavigating.value) {
     isHidden.value = false; // Top of page
   }
 
   lastScrollY = currentScrollY;
+};
+
+const handleNavClick = () => {
+  isNavigating.value = true;
+  // Keep navbar visible during the smooth scroll duration
+  setTimeout(() => {
+    isNavigating.value = false;
+  }, 1000);
 };
 
 onMounted(() => {
@@ -86,6 +95,7 @@ const closeMenu = () => {
             :href="link.href"
             class="text-sm font-medium transition-colors"
             style="color: #6b7280"
+            @click="handleNavClick"
             @mouseenter="($event.target as HTMLElement).style.color = '#111827'"
             @mouseleave="($event.target as HTMLElement).style.color = '#6b7280'"
           >
@@ -140,7 +150,7 @@ const closeMenu = () => {
               :href="link.href"
               class="text-sm font-medium px-3 py-2 rounded-lg transition-colors"
               style="color: #374151"
-              @click="closeMenu"
+              @click="() => { handleNavClick(); closeMenu(); }"
             >
               {{ link.name }}
             </a>

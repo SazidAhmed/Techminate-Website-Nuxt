@@ -28,7 +28,12 @@ useHead({
 
     <BookingModal />
     <Navigation />
-    <main>
+    <Transition appear
+      enter-active-class="transition-all duration-1000 ease-out"
+      enter-from-class="opacity-0 translate-y-8 blur-[4px]"
+      enter-to-class="opacity-100 translate-y-0 blur-none"
+    >
+      <main>
       <HeroSection />
       <TrustedBySection />
       <TechStackSection />
@@ -42,7 +47,8 @@ useHead({
       <TestimonialsSection />
       <FAQSection />
       <CTASection />
-    </main>
+      </main>
+    </Transition>
     <FooterSection />
     <BackToTop />
   </div>
