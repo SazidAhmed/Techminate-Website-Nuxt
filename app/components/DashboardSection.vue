@@ -3,7 +3,7 @@ import { Search, Rocket, Eye, BrainCircuit, Shield } from 'lucide-vue-next'
 </script>
 
 <template>
-  <section id="process" class="py-16 sm:py-20 lg:py-28 relative">
+  <section id="why-us" class="py-16 sm:py-20 lg:py-28 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12 sm:mb-16">
         <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold" style="color:#111827">
